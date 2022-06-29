@@ -1,0 +1,148 @@
+body {
+    /* background-color: #ffe2c3; */
+    font-family: "Nunito", sans-serif;
+    /* margin-top:2.5rem; */
+    background: rgb(250,220,187);
+    background: radial-gradient(circle, rgba(250,220,187,1) 0%, rgba(255,254,253,1) 100%);
+
+}
+
+.blurb h2 {
+    color: #878672;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: black;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+/* .content {
+    margin-top: 5rem;
+
+} */
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+    /* background-color: #312b26; */
+    /* border-bottom: 0.5px solid #ffe2c3cc; */
+    border-bottom: 0.5px solid #ffe2c3cc;
+    background-image: linear-gradient(15deg, #312b26 0%, #423529 100%);
+    
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #de5a09;
+}
+
+#mainNavbar .navbar-brand {
+    color: #7d6e61;
+
+
+}
+
+#headingGroup span {
+    color: #de5a09;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+
+}
+
+@media (max-width:1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+
+}
+
+
+#mainNavbar {
+    transform: translateY(-100%);
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes mainNavbar {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+#slide {
+    transform: translateX(100%);
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1.5s;
+    border-radius: 4px;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#slide2 {
+    transform: translateX(-100%);
+    -webkit-animation: slide 1.5s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1.5s;
+    border-radius: 4px;
+}
+
+
+
+
+/* Welcome message animation */
+
+.welcome::before {
+    content: 'Welcome to the Natural History Museum';
+    font-size: 3rem;
+    text-align: center;
+    animation: fadein 3.5s;
+    font-family:  serif;
+    color: #4b4239;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Welcome message animation End */
+
+.container-fluid {
+    padding: 0px;
+    overflow: hidden;
+}
